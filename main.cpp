@@ -2,23 +2,22 @@
 #include <stdio.h>
 
 int main() {
-    int num;
+    float ave_score;
+    float math, english, science, programming;
 
-    printf("아무 숫자나 입력해 보세요 : ");
-    scanf("%d", &num);
+    printf("수학, 영어, 과학, 컴퓨터 프로그래밍 점수를 각각 입력해 주세요 ! : ");
+    scanf("%f %f %f %f", &math, &english, &science, &programming);
 
-    if (num == 7) {
-        printf("a 행운의 숫자 7 이군요!\n");
-    } else if (num == 7) {
-        printf("b 행운의 숫자 7 이군요! \n");
+    ave_score =
+            (math + english + science + programming) / 4;  // 4 과목의 평균을 구한다.
+    printf("당신의 평균 점수는 %f 입니다 \n", ave_score);
+    if (ave_score >= 90) {
+        printf("당신은 우등생 입니다. ");
+    } else if (ave_score >= 40) {
+        printf("조금만 노력하세요!. \n");
+    } else {
+        printf("공부를 발로 합니까? \n");
     }
 
-    // 비교
-    if (num == 7) {
-        printf("c 행운의 숫자 7 이군요!\n");
-    }
-    if (num == 7) {
-        printf("d 행운의 숫자 7 이군요! \n");
-    }
     return 0;
 }

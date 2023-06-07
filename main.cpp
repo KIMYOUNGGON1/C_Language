@@ -9,5 +9,8 @@ int main() {
     if (height >= 190 || weight >= 100) {
         printf("당신은 '거구' 입니다. \n");
     }
+    if (!(height >= 190 || weight >= 100)) {
+        printf("당신은 거구가 아닙니다. \n");
+    }
     return 0;
 }

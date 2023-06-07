@@ -1,40 +1,17 @@
-/* 크기 비교하기 */
+/* if-else 문 시작 */
 #include <stdio.h>
 
 int main() {
-    int i, j;
+    int num;
 
-    printf("크기를 비교할 두 수를 입력해 주세요 : ");
-    scanf("%d %d", &i, &j);
+    printf("아무 숫자나 입력해 보세요. : ");
+    scanf("%d", &num);
 
-    if (i > j)  // i 가 j 보다 크면
-    {
-        printf("%d 는 %d 보다 큽니다 \n", i, j);
+    if (num == 7) {
+        printf("행운의 숫자 7이군요!\n");
+    } else {
+        printf("그냥 보통 숫자인 %d 를 입력했군요. \n", num);
     }
 
-    if (i < j)  // i 가 j 보다 작으면
-    {
-        printf("%d 는 %d 보다 작습니다 \n", i, j);
-    }
-
-    if (i >= j)  // i 가 j 보다 크거나 같으면
-    {
-        printf("%d 는 %d 보다 크거나 같습니다 \n", i, j);
-    }
-
-    if (i <= j)  // i 가 j 보다 작거나 같으면
-    {
-        printf("%d 는 %d 보다 작거나 같습니다 \n", i, j);
-    }
-
-    if (i == j)  // i 와 j 가 같으면
-    {
-        printf("%d 는 %d 와(과) 같습니다 \n", i, j);
-    }
-
-    if (i != j)  // i 와 j 가 다르면
-    {
-        printf("%d 는 %d 와(과) 다릅니다 \n", i, j);
-    }
     return 0;
 }

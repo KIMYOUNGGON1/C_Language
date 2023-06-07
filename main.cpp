@@ -1,13 +1,18 @@
-/* if 문 이란? */
+/* 합격? 불합격? */
 #include <stdio.h>
 
 int main() {
-    int i;
-    printf("입력하고 싶은 숫자를 입력하세요! : ");
-    scanf("%d", &i);
+    int score;
 
-    if (i == 7) {
-        printf("당신은 행운의 숫자 7을 입력했습니다.");
+    printf("당신의 수학 점수를 입력 하세요! : ");
+    scanf("%d", &score);
+
+    if (score >= 90) {
+        printf("당신은 합격 입니다! \n");
+    }
+
+    if (score < 90) {
+        printf("당신은 불합격 입니다! \n");
     }
 
     return 0;

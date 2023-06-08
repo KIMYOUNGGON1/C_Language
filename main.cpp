@@ -3,11 +3,11 @@
 int main() {
     int i = 1, sum = 0;
 
-    while (i <= 100) {
+    do {
         sum += i;
         i++;
-    }
+    } while (i < 1);
 
-    printf("1 부터 100 까지의 합 : %d \n", sum);
+    printf(" sum : %d \n", sum);
     return 0;
 }

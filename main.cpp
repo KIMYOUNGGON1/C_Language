@@ -3,9 +3,9 @@
 
 int main() {
     int i, sum = 0;
-    for (i = 0; i < 20; ++i) {
+    for (i = 0; i <= 10000; ++i) {
         sum = sum + i;
     }
-    printf("1 부터 19 까지의 합 : %d", sum);
+    printf("1 부터 10000 까지의 합 : %d \n", sum);
     return 0;
 }

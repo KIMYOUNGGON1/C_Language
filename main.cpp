@@ -2,8 +2,8 @@
 
 int main() {
     for (;;) {
-        break;
         printf("a");
+        break;
     }
     return 0;
 }
